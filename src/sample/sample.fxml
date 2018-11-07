@@ -41,7 +41,7 @@
          </font>
       </Label>
       <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="31.0" prefWidth="167.0" text="Clear" GridPane.rowIndex="5" />
-      <Button fx:id="info" mnemonicParsing="false" onAction="#getInfo" prefHeight="31.0" prefWidth="163.0" text="Udskriv info om mig" GridPane.rowIndex="4" />
+      <Button fx:id="info" mnemonicParsing="false" onAction="#getInfo" prefHeight="31.0" prefWidth="163.0" text="Udskriv info om Dan" GridPane.rowIndex="4" />
    </children>
    <opaqueInsets>
       <Insets right="-5.0" />
