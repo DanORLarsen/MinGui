@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="404.0" prefWidth="206.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="300.0" minWidth="49.0" prefWidth="160.0" />
+      <ColumnConstraints maxWidth="16.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button fx:id="kommando" mnemonicParsing="false" onAction="#sendKommando" prefHeight="31.0" prefWidth="170.0" text="Send kommando" GridPane.rowIndex="3" />
+      <TextField fx:id="displayer" onAction="#sendKommando" GridPane.rowIndex="2" />
+      <TextArea fx:id="outputDisplay" prefHeight="141.0" prefWidth="150.0" GridPane.rowIndex="7">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></TextArea>
+      <Label prefHeight="45.0" prefWidth="152.0" text="  Min GUI!" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="31.0" prefWidth="167.0" text="Clear" GridPane.rowIndex="5" />
+      <Button fx:id="info" mnemonicParsing="false" onAction="#getInfo" prefHeight="31.0" prefWidth="163.0" text="Udskriv info om mig" GridPane.rowIndex="4" />
+   </children>
+   <opaqueInsets>
+      <Insets right="-5.0" />
+   </opaqueInsets>
+</GridPane>
