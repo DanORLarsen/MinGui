@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
@@ -24,11 +26,12 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <Button fx:id="kommando" mnemonicParsing="false" onAction="#sendKommando" prefHeight="31.0" prefWidth="170.0" text="Send kommando" GridPane.rowIndex="3" />
-      <TextField fx:id="displayer" onAction="#sendKommando" promptText="Input text Please" GridPane.rowIndex="2" />
-      <TextArea fx:id="outputDisplay" prefHeight="141.0" prefWidth="150.0" promptText="Her vil der stå det du har skrevet" GridPane.rowIndex="7">
+      <Button fx:id="kommando" mnemonicParsing="false" onAction="#sendKommando" prefHeight="31.0" prefWidth="170.0" text="Send kommando" GridPane.rowIndex="4" />
+      <TextField fx:id="displayer" onAction="#sendKommando" promptText="Input text Please" GridPane.rowIndex="3" />
+      <TextArea fx:id="outputDisplay" prefHeight="141.0" prefWidth="150.0" promptText="Her vil der stå det du har skrevet" GridPane.rowIndex="8">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -40,8 +43,13 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="31.0" prefWidth="167.0" text="Clear" GridPane.rowIndex="5" />
-      <Button fx:id="info" mnemonicParsing="false" onAction="#getInfo" prefHeight="31.0" prefWidth="163.0" text="Udskriv info om Dan" GridPane.rowIndex="4" />
+      <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="31.0" prefWidth="167.0" text="Clear" GridPane.rowIndex="6" />
+      <Button fx:id="info" mnemonicParsing="false" onAction="#getInfo" prefHeight="31.0" prefWidth="163.0" text="Udskriv info om Dan" GridPane.rowIndex="5" />
+      <ImageView fx:id="Image" fitHeight="36.0" fitWidth="153.0" onMouseClicked="#openTank" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+         <image>
+            <Image url="http://tanktrouble4.com/wp-content/uploads/2016/06/tanktroublelogo22.jpg" />
+         </image>
+      </ImageView>
    </children>
    <opaqueInsets>
       <Insets right="-5.0" />
