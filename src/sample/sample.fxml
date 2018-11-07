@@ -27,8 +27,8 @@
    </rowConstraints>
    <children>
       <Button fx:id="kommando" mnemonicParsing="false" onAction="#sendKommando" prefHeight="31.0" prefWidth="170.0" text="Send kommando" GridPane.rowIndex="3" />
-      <TextField fx:id="displayer" onAction="#sendKommando" GridPane.rowIndex="2" />
-      <TextArea fx:id="outputDisplay" prefHeight="141.0" prefWidth="150.0" GridPane.rowIndex="7">
+      <TextField fx:id="displayer" onAction="#sendKommando" promptText="Input text Please" GridPane.rowIndex="2" />
+      <TextArea fx:id="outputDisplay" prefHeight="141.0" prefWidth="150.0" promptText="Her vil der stå det du har skrevet" GridPane.rowIndex="7">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
